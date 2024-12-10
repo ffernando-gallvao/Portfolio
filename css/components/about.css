@@ -1,0 +1,63 @@
+.sobre{
+    position: relative;
+    bottom: 4rem;
+    text-align: center;
+}
+.section__saiba {
+    text-align: center;
+    font-size: 1.75rem;
+    position: relative;
+    top: 0.5rem;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    scroll-margin-top: 20rem;
+}
+.about .about__left{
+    max-width: 40rem;
+    flex: 1;
+    position: relative;
+    top: 10rem;
+}
+.about .about__left p{
+    margin: 1rem 0 2rem;
+}
+.about .about__left ul{
+    margin-left: -1.2rem;
+}
+.about .about__left ul li{
+    display: inline-block;
+}
+.about .about__left ul li a{
+    display: inline-block;
+    padding: 1rem;
+}
+.about .about__right{
+    flex: 1;
+    max-width: 45rem;
+    position: relative;
+    top: 10rem;
+}
+@media only screen and (max-width: 768px){
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre{
+        display: none;
+    }
+    .about .about__left{
+        max-width: 66rem;
+        text-align: center;
+    }
+    .about .about__right{
+        text-align: center;
+    }
+    .about .about__left ul{
+        position: relative;
+        top: 2rem;
+        left: 1rem;
+    }
+}
